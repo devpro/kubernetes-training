@@ -14,13 +14,13 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install CLI tools
         run: |
-          apt-get update
-          apt-get install -y yamllint
-          apt-get install -y curl
-          curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
-          apt-get install -y nodejs
+          sudo apt-get update
+          sudo apt-get install -y yamllint
+          sudo apt-get install -y curl
+          curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+          sudo apt-get install -y nodejs
           npm -v
-          npm install -g markdownlint-cli
+          sudo npm install -g markdownlint-cli
       - name: Lints Markdown files
         run: |
           find . -name "*.md" | markdownlint
