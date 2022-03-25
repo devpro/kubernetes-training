@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install CLI tools
+        run: |
+          apt-get update
+          apt-get install -y yamllint
+          apt-get install -y curl
+          curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+          apt-get install -y nodejs
+          npm -v
+          npm install -g markdownlint-cli
+      - name: Lints Markdown files
+        run: |
+          find . -name "*.md" | markdownlint
