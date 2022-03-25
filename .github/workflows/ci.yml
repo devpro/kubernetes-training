@@ -24,4 +24,4 @@ jobs:
       - name: Lints Markdown files
         run: |
           find . -name "*.md" -exec markdownlint {} \;
-          yamllint -c .yamllint.yaml docs/**/*.yaml
+          find . -name "*.yaml" -exec yamllint -c .yamllint.yaml {} \;

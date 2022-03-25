@@ -1,5 +1,7 @@
 # Kubernetes training
 
+[![CI](https://github.com/devpro/kubernetes-training/actions/workflows/ci.yml/badge.svg)](https://github.com/devpro/kubernetes-training/actions/workflows/ci.yml)
+
 Welcome to this learning space!
 
 ## Introduction
