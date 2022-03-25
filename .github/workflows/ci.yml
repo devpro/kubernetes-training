@@ -23,4 +23,4 @@ jobs:
           sudo npm install -g markdownlint-cli
       - name: Lints Markdown files
         run: |
-          find . -name "*.md" | markdownlint
+          find . -name "*.md" -exec markdownlint {} \;
