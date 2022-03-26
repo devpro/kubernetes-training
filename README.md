@@ -6,11 +6,15 @@ Welcome to this learning space!
 
 ## Introduction
 
-You'll find here training exercises to learn and practice Kubernetes.
+You'll find here training exercises to **learn and practice Kubernetes from Zero**.
 
-Feel free to contribute, by sharing it, creating Issues and submitting Pull Requests!
+:bulb: Feel free to contribute, by sharing it, creating Issues and submitting Pull Requests!
 
-## Setup
+## Requirements
+
+### Terminal
+
+We'll mainly execute commands from a terminal window. Make sure you chose one you are familiar with.
 
 ### kubectl
 
@@ -19,22 +23,31 @@ It must be installed prior to any other action.
 
 Follow the procedure from the [official documentation](https://kubernetes.io/docs/tasks/tools/#kubectl).
 
-Example: [Installation on Ubuntu](./docs/0-setup/ubuntu-setup.md#kubectl)
+Example: [Install kubectl on Ubuntu](./samples/ubuntu-based-configuration.md#kubectl)
 
-### Kubernetes cluster
+### (Optional) IDE
 
-Multiple options are available. Do not hesitate to have a try on all of them.
-
-#### KataCoda playgroung
-
-* [Kubernetes Playground](https://www.katacoda.com/courses/kubernetes/playground)
-
-#### kind
-
-#### k3s
+We are going to create and update YAML files. Some people may be confortable in using IDE, like Visual Studio Code, to do so.
 
 ## Learning paths
 
 ### Discovery tour
 
-* [Dashboard](./docs/1-dashboard/dashboard.md)
+* [1. Components](./docs/1-components/components.md)
+* [2. Setup](./docs/2-setup/setup.md)
+* [3. Dashboard](./docs/3-dashboard/dashboard.md)
+* [4. Deployments](./docs/4-deployments/deployments.md)
+* [5. Services](./docs/5-services/services.md)
+* Ingresses
+* Operators
+
+### Administration tour
+
+* Statefull with MongoDB operator
+* Installation with kubeadm
+* Managed instances with Azure Kubernetes Service (AKS)
+* Package management with Helm
+* Secret management with Bitnami Sealed Secrets
+* Certificate automated creation with cert-manager and Let's Encrypt
+* GitOps with ArgoCD
+* Observability with OpenTelemetry, Prometheus and Grafana

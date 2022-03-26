@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install CLI tools
+      - name: Install command line tools
         run: |
           sudo apt-get update
           sudo apt-get install -y yamllint
@@ -21,7 +21,7 @@ jobs:
           sudo apt-get install -y nodejs
           npm -v
           sudo npm install -g markdownlint-cli
-      - name: Lints Markdown files
+      - name: Lint files
         run: |
           find . -name "*.md" -exec markdownlint {} \;
           find . -name "*.yaml" -exec yamllint -c .yamllint.yml {} \;
