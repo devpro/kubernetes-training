@@ -60,7 +60,7 @@ sudo chmod +x /usr/local/bin/kind
 kind version
 
 # creates cluster configuration file
-cat > cluster-config.yml <<EOM
+cat > kind-cluster-config.yml <<EOM
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
@@ -72,7 +72,7 @@ nodes:
 EOM
 
 # creates a cluster
-kind create cluster
+kind create cluster --config manifests/kind-cluster-config.yml
 
 # lists clusters
 kind get clusters

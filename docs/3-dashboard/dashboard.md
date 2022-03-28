@@ -2,11 +2,9 @@
 
 ## Documentation
 
+- [Deploy and Access the Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
 - [Understanding Kubernetes Objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/)
 - [Workloads](https://kubernetes.io/docs/concepts/workloads/)
-- [Deploy and Access the Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
-- [Creating sample user](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md)
-- [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
 ## Exercise
 
@@ -18,7 +16,7 @@
 
 ### Help
 
-- Samples: [kubectl commands](../../samples/kubectl-commands.md)
+- Use [dashboard-adminuser.yaml](../../manifests/dashboard-adminuser.yaml) to create a user
 
 ## Knowledge assessment
 

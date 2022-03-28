@@ -7,7 +7,7 @@ In order to practice, we need at least a Kubernetes cluster to work on, with adm
 ## Documentation
 
 - [k3d](https://k3d.io/)
-- [kataCoda Kubernetes Playground](https://www.katacoda.com/courses/kubernetes/playground)
+- [kataCoda playground](https://www.katacoda.com/courses/kubernetes/playground)
 - [kind](https://kind.sigs.k8s.io/)
 
 ## Exercise
@@ -25,7 +25,7 @@ In order to practice, we need at least a Kubernetes cluster to work on, with adm
 
 ### Help
 
-- Samples: [Ubuntu based configuration](../../samples/ubuntu-based-configuration.md)
+- Samples: [Ubuntu based configuration](../0-help/ubuntu-based-configuration.md)
 
 ## Next
 

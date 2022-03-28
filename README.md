@@ -19,11 +19,10 @@ We'll mainly execute commands from a terminal window. Make sure you chose one yo
 ### kubectl
 
 [`kubectl`](https://kubernetes.io/docs/reference/kubectl/) is the Kubernetes Command Line Interface tool.
-It must be installed prior to any other action.
 
-Follow the procedure from the [official documentation](https://kubernetes.io/docs/tasks/tools/#kubectl).
+It must be installed prior to any other action: [official documentation](https://kubernetes.io/docs/tasks/tools/#kubectl).
 
-Example: [Install kubectl on Ubuntu](./samples/ubuntu-based-configuration.md#kubectl)
+Get to know the tool with the [command help](./docs/0-help/kubectl-commands.md).
 
 ### (Optional) IDE
 
