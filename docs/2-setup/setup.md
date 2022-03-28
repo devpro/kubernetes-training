@@ -25,8 +25,9 @@ In order to practice, we need at least a Kubernetes cluster to work on, with adm
 
 ### Help
 
-- [kind-cluster-config.yml](../../manifests/kind-cluster-config.yml) to avoid issues with WSL
 - [Ubuntu based configuration](../0-help/ubuntu-based-configuration.md)
+- Use [kind-cluster-config.yml](../../manifests/kind-cluster-config.yml) to avoid issues with WSL
+or restart WSL if a service can't be reached from Windows
 
 ## Next
 
